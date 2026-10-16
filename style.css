@@ -1,0 +1,210 @@
+
+/* 1. Basic reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #0f172a;
+  color: #e2e8f0;
+  line-height: 1.7;
+}
+
+/* 2. Navigation */
+header {
+  background: #111c32;
+  border-bottom: 1px solid #263449;
+  padding: 18px 7%;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+nav a {
+  color: #cbd5e1;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #86efac;
+}
+
+nav .logo {
+  color: #ffffff;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.logo span,
+.hero h1 span {
+  color: #4ade80;
+}
+
+/* 3. Main sections */
+main {
+  max-width: 1000px;
+  margin: auto;
+  padding: 0 24px;
+}
+
+section {
+  padding: 72px 0;
+  scroll-margin-top: 24px;
+}
+
+section h2 {
+  color: #ffffff;
+  font-size: 1.8rem;
+  margin-bottom: 12px;
+}
+
+.hero {
+  padding-top: 110px;
+  padding-bottom: 100px;
+}
+
+.eyebrow {
+  color: #4ade80;
+  font-size: 0.8rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin-bottom: 18px;
+}
+
+.hero h1 {
+  color: #ffffff;
+  font-size: clamp(2.4rem, 7vw, 4rem);
+  line-height: 1.2;
+}
+
+.hero h2 {
+  color: #cbd5e1;
+  font-size: 1.35rem;
+  margin: 18px 0;
+}
+
+.hero p:not(.eyebrow) {
+  max-width: 650px;
+  color: #cbd5e1;
+  margin-bottom: 28px;
+}
+
+/* 4. Button */
+.button {
+  display: inline-block;
+  background: #4ade80;
+  color: #052e16;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: transform 0.2s, background 0.2s;
+}
+
+.button:hover {
+  background: #86efac;
+  transform: translateY(-2px);
+}
+
+/* 5. Skills */
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 22px;
+}
+
+.skills span {
+  background: #1e293b;
+  border: 1px solid #334155;
+  color: #86efac;
+  border-radius: 8px;
+  padding: 9px 15px;
+}
+
+/* 6. Project cards */
+.project {
+  background: #172338;
+  border: 1px solid #334155;
+  border-radius: 12px;
+  padding: 24px;
+  margin-top: 20px;
+}
+
+.project h3 {
+  color: #ffffff;
+  margin-bottom: 8px;
+}
+
+.project p {
+  color: #cbd5e1;
+}
+
+.status {
+  display: inline-block;
+  margin-top: 14px;
+  color: #86efac;
+  font-size: 0.9rem;
+}
+
+/* 7. Contact links */
+#contact a {
+  display: inline-block;
+  color: #86efac;
+  margin: 12px 18px 0 0;
+}
+
+/* 8. Footer */
+footer {
+  text-align: center;
+  padding: 28px 16px;
+  background: #111c32;
+  border-top: 1px solid #263449;
+  color: #94a3b8;
+}
+
+/* 9. Mobile screens */
+@media (max-width: 600px) {
+  header {
+    padding: 16px 5%;
+  }
+
+  nav {
+    justify-content: flex-start;
+    gap: 12px 18px;
+  }
+
+  nav .logo {
+    width: 100%;
+  }
+
+  main {
+    padding: 0 20px;
+  }
+
+  .hero {
+    padding-top: 70px;
+    padding-bottom: 60px;
+  }
+
+  section {
+    padding: 48px 0;
+  }
+}
+
+nav a.active {
+  color: #4ade80;
+  font-weight: bold;
+}
